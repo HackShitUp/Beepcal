@@ -1,5 +1,5 @@
 //
-//  CalendarController.swift
+//  CalendarStory.swift
 //  Beepcal
 //
 //  Created by Joshua Choi on 3/30/18.
@@ -8,18 +8,17 @@
 
 import UIKit
 
-/**
- 
- */
-class CalendarController: UIViewController {
+class CalendarStory: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
+    
     }
+    
 
 }

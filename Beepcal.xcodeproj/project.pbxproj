@@ -25,6 +25,8 @@
 		7E61023D206EE21E00CC6AB3 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E61023C206EE21E00CC6AB3 /* UIView+Extensions.swift */; };
 		7E610240206EE4FA00CC6AB3 /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E61023F206EE4FA00CC6AB3 /* CalendarController.swift */; };
 		7E610242206EE5AF00CC6AB3 /* CalendarStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E610241206EE5AF00CC6AB3 /* CalendarStory.swift */; };
+		7E610248206EED3900CC6AB3 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E610246206EED3900CC6AB3 /* CalendarCell.swift */; };
+		7E610249206EED3900CC6AB3 /* CalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E610247206EED3900CC6AB3 /* CalendarCell.xib */; };
 		84265182EDA58FBA4F950E44 /* Pods_BeepcalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8346277D541E8C064227E50 /* Pods_BeepcalUITests.framework */; };
 		C975BD27BFC413DFD8B3C222 /* Pods_BeepcalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56CE7E78A86D53D6A3B7F9F /* Pods_BeepcalTests.framework */; };
 /* End PBXBuildFile section */
@@ -71,6 +73,8 @@
 		7E61023F206EE4FA00CC6AB3 /* CalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
 		7E610241206EE5AF00CC6AB3 /* CalendarStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarStory.swift; sourceTree = "<group>"; };
 		7E610245206EEB6600CC6AB3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7E610246206EED3900CC6AB3 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		7E610247206EED3900CC6AB3 /* CalendarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarCell.xib; sourceTree = "<group>"; };
 		82CBA52A7D86038884B5CE4A /* Pods-BeepcalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeepcalUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeepcalUITests/Pods-BeepcalUITests.release.xcconfig"; sourceTree = "<group>"; };
 		87A8C1E22304E09F25DEE5A3 /* Pods-Beepcal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beepcal.release.xcconfig"; path = "Pods/Target Support Files/Pods-Beepcal/Pods-Beepcal.release.xcconfig"; sourceTree = "<group>"; };
 		9753137AE0EB19CDF608EC70 /* Pods-BeepcalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeepcalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeepcalTests/Pods-BeepcalTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -154,8 +158,7 @@
 				7E610235206EE00400CC6AB3 /* BCNavigationBar */,
 				7E610230206EDFE000CC6AB3 /* Helpers */,
 				7E61022E206EDFB000CC6AB3 /* InitialViewController.swift */,
-				7E61023F206EE4FA00CC6AB3 /* CalendarController.swift */,
-				7E610241206EE5AF00CC6AB3 /* CalendarStory.swift */,
+				7E61024A206EED3C00CC6AB3 /* CalendarController */,
 				7E6101FF206EDDC700CC6AB3 /* Main.storyboard */,
 				7E610205206EDDC700CC6AB3 /* Assets.xcassets */,
 				7E610207206EDDC700CC6AB3 /* LaunchScreen.storyboard */,
@@ -209,6 +212,25 @@
 				7E61023A206EE1EC00CC6AB3 /* InstagramManager.swift */,
 			);
 			path = Objects;
+			sourceTree = "<group>";
+		};
+		7E61024A206EED3C00CC6AB3 /* CalendarController */ = {
+			isa = PBXGroup;
+			children = (
+				7E61023F206EE4FA00CC6AB3 /* CalendarController.swift */,
+				7E610241206EE5AF00CC6AB3 /* CalendarStory.swift */,
+				7E61024B206EEFAC00CC6AB3 /* CalendarCell */,
+			);
+			path = CalendarController;
+			sourceTree = "<group>";
+		};
+		7E61024B206EEFAC00CC6AB3 /* CalendarCell */ = {
+			isa = PBXGroup;
+			children = (
+				7E610246206EED3900CC6AB3 /* CalendarCell.swift */,
+				7E610247206EED3900CC6AB3 /* CalendarCell.xib */,
+			);
+			path = CalendarCell;
 			sourceTree = "<group>";
 		};
 		90E3A8AC777C85A28F66BA24 /* Frameworks */ = {
@@ -340,6 +362,7 @@
 				7E610209206EDDC700CC6AB3 /* LaunchScreen.storyboard in Resources */,
 				7E610206206EDDC700CC6AB3 /* Assets.xcassets in Resources */,
 				7E610201206EDDC700CC6AB3 /* Main.storyboard in Resources */,
+				7E610249206EED3900CC6AB3 /* CalendarCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,6 +552,7 @@
 				7E61022D206EDF4600CC6AB3 /* UIColor+Extensions.swift in Sources */,
 				7E610242206EE5AF00CC6AB3 /* CalendarStory.swift in Sources */,
 				7E61022F206EDFB000CC6AB3 /* InitialViewController.swift in Sources */,
+				7E610248206EED3900CC6AB3 /* CalendarCell.swift in Sources */,
 				7E610239206EE14800CC6AB3 /* CALayer+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -699,6 +723,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4AFFM98UVG;
 				INFOPLIST_FILE = Beepcal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = li.capsule.capsule.Beepcal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -715,6 +740,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4AFFM98UVG;
 				INFOPLIST_FILE = Beepcal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = li.capsule.capsule.Beepcal;
 				PRODUCT_NAME = "$(TARGET_NAME)";

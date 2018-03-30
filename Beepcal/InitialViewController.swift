@@ -17,15 +17,16 @@ class InitialViewController: UIViewController {
     // MARK: - IBOutlets
     @IBOutlet weak var loginButton: UIButton!
     @IBAction func loginAction(_ sender: Any) {
-        
-        let api = Instagram.shared
-        
         // Unwrap the navigation controller
         if let navigator = self.navigationController {
             // MARK: - SwiftInstagram
-            api.login(from: navigator, success: {
-                print("Success")
-                
+            Instagram.shared.login(from: navigator, success: {
+                // Ensure that the user is authenticated before displaying their posts in the calendar.
+                if Instagram.shared.isAuthenticated == true {
+                    // CalendarController
+                    let calendarControllerVC = self.storyboard?.instantiateViewController(withIdentifier: "calendarControllerVC") as! CalendarController
+                    self.navigationController?.pushViewController(calendarControllerVC, animated: true)
+                }
             }, failure: { (error: Error?) in
                 print("\(self): \(error?.localizedDescription as Any)")
             })
