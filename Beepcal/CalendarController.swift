@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CalendarController.swift
 //  Beepcal
 //
 //  Created by Joshua Choi on 3/30/18.
@@ -8,18 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+/**
+ 
+ */
+class CalendarController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
 
-
 }
-

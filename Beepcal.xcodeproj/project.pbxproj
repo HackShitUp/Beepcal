@@ -9,13 +9,22 @@
 /* Begin PBXBuildFile section */
 		4EA249E5E26B74BF184F5BF9 /* Pods_Beepcal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD270B7A4F685F1B99094680 /* Pods_Beepcal.framework */; };
 		7E6101FC206EDDC700CC6AB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6101FB206EDDC700CC6AB3 /* AppDelegate.swift */; };
-		7E6101FE206EDDC700CC6AB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6101FD206EDDC700CC6AB3 /* ViewController.swift */; };
 		7E610201206EDDC700CC6AB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6101FF206EDDC700CC6AB3 /* Main.storyboard */; };
 		7E610204206EDDC700CC6AB3 /* Beepcal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E610202206EDDC700CC6AB3 /* Beepcal.xcdatamodeld */; };
 		7E610206206EDDC700CC6AB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E610205206EDDC700CC6AB3 /* Assets.xcassets */; };
 		7E610209206EDDC700CC6AB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E610207206EDDC700CC6AB3 /* LaunchScreen.storyboard */; };
 		7E610214206EDDC700CC6AB3 /* BeepcalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E610213206EDDC700CC6AB3 /* BeepcalTests.swift */; };
 		7E61021F206EDDC700CC6AB3 /* BeepcalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E61021E206EDDC700CC6AB3 /* BeepcalUITests.swift */; };
+		7E61022D206EDF4600CC6AB3 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E61022C206EDF4600CC6AB3 /* UIColor+Extensions.swift */; };
+		7E61022F206EDFB000CC6AB3 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E61022E206EDFB000CC6AB3 /* InitialViewController.swift */; };
+		7E610232206EDFF100CC6AB3 /* BCNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E610231206EDFF100CC6AB3 /* BCNavigationBar.swift */; };
+		7E610234206EE00100CC6AB3 /* BCNavigationBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E610233206EE00100CC6AB3 /* BCNavigationBarButton.swift */; };
+		7E610237206EE0B600CC6AB3 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E610236206EE0B600CC6AB3 /* UIViewController+Extensions.swift */; };
+		7E610239206EE14800CC6AB3 /* CALayer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E610238206EE14800CC6AB3 /* CALayer+Extensions.swift */; };
+		7E61023B206EE1EC00CC6AB3 /* InstagramManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E61023A206EE1EC00CC6AB3 /* InstagramManager.swift */; };
+		7E61023D206EE21E00CC6AB3 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E61023C206EE21E00CC6AB3 /* UIView+Extensions.swift */; };
+		7E610240206EE4FA00CC6AB3 /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E61023F206EE4FA00CC6AB3 /* CalendarController.swift */; };
+		7E610242206EE5AF00CC6AB3 /* CalendarStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E610241206EE5AF00CC6AB3 /* CalendarStory.swift */; };
 		84265182EDA58FBA4F950E44 /* Pods_BeepcalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8346277D541E8C064227E50 /* Pods_BeepcalUITests.framework */; };
 		C975BD27BFC413DFD8B3C222 /* Pods_BeepcalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56CE7E78A86D53D6A3B7F9F /* Pods_BeepcalTests.framework */; };
 /* End PBXBuildFile section */
@@ -40,7 +49,6 @@
 /* Begin PBXFileReference section */
 		7E6101F8206EDDC700CC6AB3 /* Beepcal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beepcal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6101FB206EDDC700CC6AB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7E6101FD206EDDC700CC6AB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7E610200206EDDC700CC6AB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E610203206EDDC700CC6AB3 /* Beepcal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Beepcal.xcdatamodel; sourceTree = "<group>"; };
 		7E610205206EDDC700CC6AB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +60,17 @@
 		7E61021A206EDDC700CC6AB3 /* BeepcalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeepcalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E61021E206EDDC700CC6AB3 /* BeepcalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeepcalUITests.swift; sourceTree = "<group>"; };
 		7E610220206EDDC700CC6AB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E61022C206EDF4600CC6AB3 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		7E61022E206EDFB000CC6AB3 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		7E610231206EDFF100CC6AB3 /* BCNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCNavigationBar.swift; sourceTree = "<group>"; };
+		7E610233206EE00100CC6AB3 /* BCNavigationBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCNavigationBarButton.swift; sourceTree = "<group>"; };
+		7E610236206EE0B600CC6AB3 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		7E610238206EE14800CC6AB3 /* CALayer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Extensions.swift"; sourceTree = "<group>"; };
+		7E61023A206EE1EC00CC6AB3 /* InstagramManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramManager.swift; sourceTree = "<group>"; };
+		7E61023C206EE21E00CC6AB3 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		7E61023F206EE4FA00CC6AB3 /* CalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
+		7E610241206EE5AF00CC6AB3 /* CalendarStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarStory.swift; sourceTree = "<group>"; };
+		7E610245206EEB6600CC6AB3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		82CBA52A7D86038884B5CE4A /* Pods-BeepcalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeepcalUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeepcalUITests/Pods-BeepcalUITests.release.xcconfig"; sourceTree = "<group>"; };
 		87A8C1E22304E09F25DEE5A3 /* Pods-Beepcal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beepcal.release.xcconfig"; path = "Pods/Target Support Files/Pods-Beepcal/Pods-Beepcal.release.xcconfig"; sourceTree = "<group>"; };
 		9753137AE0EB19CDF608EC70 /* Pods-BeepcalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeepcalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeepcalTests/Pods-BeepcalTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +126,7 @@
 		7E6101EF206EDDC700CC6AB3 = {
 			isa = PBXGroup;
 			children = (
+				7E610245206EEB6600CC6AB3 /* README.md */,
 				7E6101FA206EDDC700CC6AB3 /* Beepcal */,
 				7E610212206EDDC700CC6AB3 /* BeepcalTests */,
 				7E61021D206EDDC700CC6AB3 /* BeepcalUITests */,
@@ -130,7 +150,12 @@
 			isa = PBXGroup;
 			children = (
 				7E6101FB206EDDC700CC6AB3 /* AppDelegate.swift */,
-				7E6101FD206EDDC700CC6AB3 /* ViewController.swift */,
+				7E61023E206EE25400CC6AB3 /* Objects */,
+				7E610235206EE00400CC6AB3 /* BCNavigationBar */,
+				7E610230206EDFE000CC6AB3 /* Helpers */,
+				7E61022E206EDFB000CC6AB3 /* InitialViewController.swift */,
+				7E61023F206EE4FA00CC6AB3 /* CalendarController.swift */,
+				7E610241206EE5AF00CC6AB3 /* CalendarStory.swift */,
 				7E6101FF206EDDC700CC6AB3 /* Main.storyboard */,
 				7E610205206EDDC700CC6AB3 /* Assets.xcassets */,
 				7E610207206EDDC700CC6AB3 /* LaunchScreen.storyboard */,
@@ -156,6 +181,34 @@
 				7E610220206EDDC700CC6AB3 /* Info.plist */,
 			);
 			path = BeepcalUITests;
+			sourceTree = "<group>";
+		};
+		7E610230206EDFE000CC6AB3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7E61022C206EDF4600CC6AB3 /* UIColor+Extensions.swift */,
+				7E61023C206EE21E00CC6AB3 /* UIView+Extensions.swift */,
+				7E610238206EE14800CC6AB3 /* CALayer+Extensions.swift */,
+				7E610236206EE0B600CC6AB3 /* UIViewController+Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7E610235206EE00400CC6AB3 /* BCNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				7E610231206EDFF100CC6AB3 /* BCNavigationBar.swift */,
+				7E610233206EE00100CC6AB3 /* BCNavigationBarButton.swift */,
+			);
+			path = BCNavigationBar;
+			sourceTree = "<group>";
+		};
+		7E61023E206EE25400CC6AB3 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				7E61023A206EE1EC00CC6AB3 /* InstagramManager.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 		90E3A8AC777C85A28F66BA24 /* Frameworks */ = {
@@ -444,10 +497,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Beepcal/Pods-Beepcal-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AnimatedCollectionViewLayout/AnimatedCollectionViewLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftInstagram/SwiftInstagram.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AnimatedCollectionViewLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftInstagram.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -461,9 +518,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E610234206EE00100CC6AB3 /* BCNavigationBarButton.swift in Sources */,
 				7E610204206EDDC700CC6AB3 /* Beepcal.xcdatamodeld in Sources */,
-				7E6101FE206EDDC700CC6AB3 /* ViewController.swift in Sources */,
+				7E61023D206EE21E00CC6AB3 /* UIView+Extensions.swift in Sources */,
+				7E610232206EDFF100CC6AB3 /* BCNavigationBar.swift in Sources */,
+				7E610237206EE0B600CC6AB3 /* UIViewController+Extensions.swift in Sources */,
+				7E61023B206EE1EC00CC6AB3 /* InstagramManager.swift in Sources */,
 				7E6101FC206EDDC700CC6AB3 /* AppDelegate.swift in Sources */,
+				7E610240206EE4FA00CC6AB3 /* CalendarController.swift in Sources */,
+				7E61022D206EDF4600CC6AB3 /* UIColor+Extensions.swift in Sources */,
+				7E610242206EE5AF00CC6AB3 /* CalendarStory.swift in Sources */,
+				7E61022F206EDFB000CC6AB3 /* InitialViewController.swift in Sources */,
+				7E610239206EE14800CC6AB3 /* CALayer+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
