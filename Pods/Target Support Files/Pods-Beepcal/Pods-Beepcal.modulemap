@@ -1,0 +1,6 @@
+framework module Pods_Beepcal {
+  umbrella header "Pods-Beepcal-umbrella.h"
+
+  export *
+  module * { export * }
+}

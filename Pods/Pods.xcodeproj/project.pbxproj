@@ -1,0 +1,900 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FDDDEBF4DB465F3EE253A58B15419DF /* SnapInAttributesAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E63DB18FA0089F8F98EE31E7997B70 /* SnapInAttributesAnimator.swift */; };
+		1125A5CE7857DA14A4C8E6D742C4596F /* RotateInOutAttributesAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F188571772EB9A225824444D60174BEC /* RotateInOutAttributesAnimator.swift */; };
+		1802C70744FC5ACF32217ACBF5260972 /* ParallaxAttributesAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3805E0E17AB00B7E8741FCF40E50B68A /* ParallaxAttributesAnimator.swift */; };
+		1DB658B6052ECB623162518123B77756 /* CrossFadeAttributesAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470820186EEB2599448D61B610FA7F4 /* CrossFadeAttributesAnimator.swift */; };
+		1F986559F52D634C22ADA7EA00DEDC5F /* Pods-BeepcalUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E02B0CC6F686404A34B3E051462B0D /* Pods-BeepcalUITests-dummy.m */; };
+		25C0613E2A219CCBC754E32839090857 /* LinearCardAttributesAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3468D92BB4B7CBA28102F6C1058366A /* LinearCardAttributesAnimator.swift */; };
+		3448F958C584DB2F0007F60C1D7C8F0E /* AnimatedCollectionViewLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C533FF59042FC4B8FC1D930B7C5B432C /* AnimatedCollectionViewLayout-dummy.m */; };
+		38037376537115491C941B30F19C2AEA /* Pods-BeepcalUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB91FDF81D52D9611CFE77B12C3501ED /* Pods-BeepcalUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F4453712B4C69ECE9DE47D6E7CF347D /* Pods-Beepcal-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AF5E9602CAEDA15AD916279283A3C /* Pods-Beepcal-dummy.m */; };
+		50130C09FF4A7A57A1284804D73837AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		520A9C5F907E09600B65840BD97D7CC7 /* UIView+Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968972DB7B8CD3612EEB1101D60038DE /* UIView+Anchor.swift */; };
+		523BED6A2EB7C76CC611892077716DE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		56C6ED467E6D88887F2F82D3D5EC3849 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		61C552D3D8E8535D17FE67E7A1241E2F /* AnimatedCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D96AE069A9BF51B72870DC2B9DD2F41 /* AnimatedCollectionViewLayout.swift */; };
+		675FC8085F139617288ECDF622AFBDB7 /* LayoutAttributesAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCD81069097BE7CFB0B0B7DA084B5FF /* LayoutAttributesAnimator.swift */; };
+		6C3E0ED549F157B68511CEA0FCFFBE2C /* CubeAttributesAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C44BA3C981C06394DD18C403C60FF3 /* CubeAttributesAnimator.swift */; };
+		7C6D49CB5C7495246F553976229C3EDC /* Pods-Beepcal-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 72CF3B13CD9F65E88169417CD2133DF4 /* Pods-Beepcal-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F40B8BBCC675E39488BCC8C4B49268A /* ZoomInOutAttributesAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E58E979B9C27837227D7249E6F15A37 /* ZoomInOutAttributesAnimator.swift */; };
+		A4312948C1CDF0C35BC92E6118602537 /* AnimatedCollectionViewLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D8ED11294B1A8D040F66455F1A088505 /* AnimatedCollectionViewLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A54630491BB0108B124C967C2A100F08 /* PageAttributesAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325A2291840B01E26FF24E946D65325E /* PageAttributesAnimator.swift */; };
+		C1CDB4914EC35342329048C7E1B97C78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		E9BD8319EAE92EB70B24E520D6C1E2CB /* Pods-BeepcalTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2F41783BDE0E4F7CDDB904C963BBDE /* Pods-BeepcalTests-dummy.m */; };
+		F63A2A8BD2936344B22912BF83AEF96D /* Pods-BeepcalTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1DE92EF4BF9DD78755CE688696DB4F0 /* Pods-BeepcalTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D20BEC8CE6BB9D1D810EA5F7A1738D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01B5F9358EAD17782FA546BF99060034;
+			remoteInfo = AnimatedCollectionViewLayout;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00D2D228750ED4123C2C52DD4A172ED1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0296132A7E50B4135E6F71F0E6CA2498 /* Pods-BeepcalUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BeepcalUITests-resources.sh"; sourceTree = "<group>"; };
+		08B8C0C73D20393ED70AF43E847311BB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CCD81069097BE7CFB0B0B7DA084B5FF /* LayoutAttributesAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutAttributesAnimator.swift; path = Source/LayoutAttributesAnimator.swift; sourceTree = "<group>"; };
+		10182E55252C17CFA1B37ED200A6A7BC /* Pods-BeepcalTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BeepcalTests-frameworks.sh"; sourceTree = "<group>"; };
+		116AB85E910747C592ED6C46F599A257 /* Pods_BeepcalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BeepcalTests.framework; path = "Pods-BeepcalTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18317FE30DC4E3B346763D6004F35430 /* Pods-Beepcal-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Beepcal-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1B3374BF4C4814C22B28C821FA22FFE8 /* Pods-BeepcalTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BeepcalTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1F3F204EA314FD4B3EEFF4B98144D3D3 /* Pods-Beepcal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Beepcal.release.xcconfig"; sourceTree = "<group>"; };
+		20FEE8732660592EAEB919E3B00E93B5 /* Pods_BeepcalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BeepcalUITests.framework; path = "Pods-BeepcalUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		214AF5E9602CAEDA15AD916279283A3C /* Pods-Beepcal-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Beepcal-dummy.m"; sourceTree = "<group>"; };
+		2B818D57E883B38A81AF0A91EB5534DD /* AnimatedCollectionViewLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AnimatedCollectionViewLayout-prefix.pch"; sourceTree = "<group>"; };
+		2FCA0EEA9F9F845DA75B505CFC1807E8 /* AnimatedCollectionViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AnimatedCollectionViewLayout.framework; path = AnimatedCollectionViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		325A2291840B01E26FF24E946D65325E /* PageAttributesAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageAttributesAnimator.swift; path = Source/PageAttributesAnimator.swift; sourceTree = "<group>"; };
+		3805E0E17AB00B7E8741FCF40E50B68A /* ParallaxAttributesAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParallaxAttributesAnimator.swift; path = Source/ParallaxAttributesAnimator.swift; sourceTree = "<group>"; };
+		39E63DB18FA0089F8F98EE31E7997B70 /* SnapInAttributesAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapInAttributesAnimator.swift; path = Source/SnapInAttributesAnimator.swift; sourceTree = "<group>"; };
+		3AABA2B928F487D9D0F87A021D60E9F5 /* Pods-BeepcalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BeepcalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3D789E9388FD914304514B00D144DEFF /* Pods-BeepcalUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BeepcalUITests-frameworks.sh"; sourceTree = "<group>"; };
+		4D2F41783BDE0E4F7CDDB904C963BBDE /* Pods-BeepcalTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BeepcalTests-dummy.m"; sourceTree = "<group>"; };
+		50C44BA3C981C06394DD18C403C60FF3 /* CubeAttributesAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CubeAttributesAnimator.swift; path = Source/CubeAttributesAnimator.swift; sourceTree = "<group>"; };
+		53F0C679BC849B688386D731F3AF6AB3 /* Pods-Beepcal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Beepcal.debug.xcconfig"; sourceTree = "<group>"; };
+		55FAE41F90ECEA730C25312B17C2292B /* Pods-BeepcalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BeepcalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A18E50D17755EFAD0CFFD18BD6429F0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E58E979B9C27837227D7249E6F15A37 /* ZoomInOutAttributesAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZoomInOutAttributesAnimator.swift; path = Source/ZoomInOutAttributesAnimator.swift; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		72CF3B13CD9F65E88169417CD2133DF4 /* Pods-Beepcal-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Beepcal-umbrella.h"; sourceTree = "<group>"; };
+		77098BEEB7FBB2AD7F510DCD943B0345 /* AnimatedCollectionViewLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AnimatedCollectionViewLayout.modulemap; sourceTree = "<group>"; };
+		8470820186EEB2599448D61B610FA7F4 /* CrossFadeAttributesAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CrossFadeAttributesAnimator.swift; path = Source/CrossFadeAttributesAnimator.swift; sourceTree = "<group>"; };
+		8D96AE069A9BF51B72870DC2B9DD2F41 /* AnimatedCollectionViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedCollectionViewLayout.swift; path = Source/AnimatedCollectionViewLayout.swift; sourceTree = "<group>"; };
+		91E02B0CC6F686404A34B3E051462B0D /* Pods-BeepcalUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BeepcalUITests-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9419B3E08E0900E6962FF99B5902FA7D /* Pods-BeepcalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BeepcalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		968972DB7B8CD3612EEB1101D60038DE /* UIView+Anchor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Anchor.swift"; path = "Source/UIView+Anchor.swift"; sourceTree = "<group>"; };
+		975D300ED9BBD2D9DF524E2A77A669A5 /* Pods-BeepcalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BeepcalTests.release.xcconfig"; sourceTree = "<group>"; };
+		A373C5804AB0A4A7EA01FE2344AF97A2 /* Pods-Beepcal-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Beepcal-acknowledgements.plist"; sourceTree = "<group>"; };
+		A5744C5A8EE4624A63F7C50EB956CC6B /* AnimatedCollectionViewLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AnimatedCollectionViewLayout.xcconfig; sourceTree = "<group>"; };
+		B502FBAF35E42149D9E113F521470CCD /* Pods-Beepcal-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Beepcal-resources.sh"; sourceTree = "<group>"; };
+		BB3534016674E3ED5D82BD505FE99666 /* Pods-BeepcalTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BeepcalTests.modulemap"; sourceTree = "<group>"; };
+		BB91FDF81D52D9611CFE77B12C3501ED /* Pods-BeepcalUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BeepcalUITests-umbrella.h"; sourceTree = "<group>"; };
+		BCC1337CE66A1E638A9BE9996E2422B9 /* Pods-Beepcal-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Beepcal-frameworks.sh"; sourceTree = "<group>"; };
+		C3468D92BB4B7CBA28102F6C1058366A /* LinearCardAttributesAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinearCardAttributesAnimator.swift; path = Source/LinearCardAttributesAnimator.swift; sourceTree = "<group>"; };
+		C533FF59042FC4B8FC1D930B7C5B432C /* AnimatedCollectionViewLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AnimatedCollectionViewLayout-dummy.m"; sourceTree = "<group>"; };
+		C98116CD81398BB19D8EC37218BF357D /* Pods_Beepcal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Beepcal.framework; path = "Pods-Beepcal.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC425BC77129ACE6DBFBE438AF025BF3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED1F6788A6F6A9FC4AD23803BD6ADE5 /* Pods-BeepcalUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BeepcalUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D70289A31874D104A8C48F4FA103FB94 /* Pods-BeepcalTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BeepcalTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D8061D660742F0AC16433642C92B4AE8 /* Pods-BeepcalUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BeepcalUITests.modulemap"; sourceTree = "<group>"; };
+		D8ED11294B1A8D040F66455F1A088505 /* AnimatedCollectionViewLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AnimatedCollectionViewLayout-umbrella.h"; sourceTree = "<group>"; };
+		DA2650178381BA83B693DEB642CF20F4 /* Pods-BeepcalUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BeepcalUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E5FAB182EB584EDBBA501B42E744CC59 /* Pods-Beepcal.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Beepcal.modulemap"; sourceTree = "<group>"; };
+		F188571772EB9A225824444D60174BEC /* RotateInOutAttributesAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RotateInOutAttributesAnimator.swift; path = Source/RotateInOutAttributesAnimator.swift; sourceTree = "<group>"; };
+		F1DE92EF4BF9DD78755CE688696DB4F0 /* Pods-BeepcalTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BeepcalTests-umbrella.h"; sourceTree = "<group>"; };
+		FF31B64C250E8A324D78CBE81786501D /* Pods-BeepcalTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BeepcalTests-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B286E7A43102940D94EC219C3FBC877 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1CDB4914EC35342329048C7E1B97C78 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EC3B49BD0A230D6621E64FB59E8226F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50130C09FF4A7A57A1284804D73837AE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3FF658EB7B16BC8E055573891DCB4D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C6ED467E6D88887F2F82D3D5EC3849 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9EF88FEDAEDB3C5DEB6567416BE4530 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				523BED6A2EB7C76CC611892077716DE8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21E515DE76B07B49F3F8A7BDD02E4C0A /* Pods-Beepcal */ = {
+			isa = PBXGroup;
+			children = (
+				CC425BC77129ACE6DBFBE438AF025BF3 /* Info.plist */,
+				E5FAB182EB584EDBBA501B42E744CC59 /* Pods-Beepcal.modulemap */,
+				18317FE30DC4E3B346763D6004F35430 /* Pods-Beepcal-acknowledgements.markdown */,
+				A373C5804AB0A4A7EA01FE2344AF97A2 /* Pods-Beepcal-acknowledgements.plist */,
+				214AF5E9602CAEDA15AD916279283A3C /* Pods-Beepcal-dummy.m */,
+				BCC1337CE66A1E638A9BE9996E2422B9 /* Pods-Beepcal-frameworks.sh */,
+				B502FBAF35E42149D9E113F521470CCD /* Pods-Beepcal-resources.sh */,
+				72CF3B13CD9F65E88169417CD2133DF4 /* Pods-Beepcal-umbrella.h */,
+				53F0C679BC849B688386D731F3AF6AB3 /* Pods-Beepcal.debug.xcconfig */,
+				1F3F204EA314FD4B3EEFF4B98144D3D3 /* Pods-Beepcal.release.xcconfig */,
+			);
+			name = "Pods-Beepcal";
+			path = "Target Support Files/Pods-Beepcal";
+			sourceTree = "<group>";
+		};
+		29B923BACFAD7F5D655AAD5366E4F55E /* Pods-BeepcalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00D2D228750ED4123C2C52DD4A172ED1 /* Info.plist */,
+				D8061D660742F0AC16433642C92B4AE8 /* Pods-BeepcalUITests.modulemap */,
+				DA2650178381BA83B693DEB642CF20F4 /* Pods-BeepcalUITests-acknowledgements.markdown */,
+				CED1F6788A6F6A9FC4AD23803BD6ADE5 /* Pods-BeepcalUITests-acknowledgements.plist */,
+				91E02B0CC6F686404A34B3E051462B0D /* Pods-BeepcalUITests-dummy.m */,
+				3D789E9388FD914304514B00D144DEFF /* Pods-BeepcalUITests-frameworks.sh */,
+				0296132A7E50B4135E6F71F0E6CA2498 /* Pods-BeepcalUITests-resources.sh */,
+				BB91FDF81D52D9611CFE77B12C3501ED /* Pods-BeepcalUITests-umbrella.h */,
+				9419B3E08E0900E6962FF99B5902FA7D /* Pods-BeepcalUITests.debug.xcconfig */,
+				3AABA2B928F487D9D0F87A021D60E9F5 /* Pods-BeepcalUITests.release.xcconfig */,
+			);
+			name = "Pods-BeepcalUITests";
+			path = "Target Support Files/Pods-BeepcalUITests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				899E3B0E3979A54B0A2D1E10EC8F64C3 /* Pods */,
+				85634F22200B1E32C382BFB917A695F9 /* Products */,
+				96D0E627010B5FCC79CE26A5C53D3225 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		85634F22200B1E32C382BFB917A695F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FCA0EEA9F9F845DA75B505CFC1807E8 /* AnimatedCollectionViewLayout.framework */,
+				C98116CD81398BB19D8EC37218BF357D /* Pods_Beepcal.framework */,
+				116AB85E910747C592ED6C46F599A257 /* Pods_BeepcalTests.framework */,
+				20FEE8732660592EAEB919E3B00E93B5 /* Pods_BeepcalUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		899E3B0E3979A54B0A2D1E10EC8F64C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB816B6B732964554C465F04299CC610 /* AnimatedCollectionViewLayout */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		96D0E627010B5FCC79CE26A5C53D3225 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				21E515DE76B07B49F3F8A7BDD02E4C0A /* Pods-Beepcal */,
+				E42EF1D2A24A3CFAEE5346161CDCC290 /* Pods-BeepcalTests */,
+				29B923BACFAD7F5D655AAD5366E4F55E /* Pods-BeepcalUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DB816B6B732964554C465F04299CC610 /* AnimatedCollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				8D96AE069A9BF51B72870DC2B9DD2F41 /* AnimatedCollectionViewLayout.swift */,
+				8470820186EEB2599448D61B610FA7F4 /* CrossFadeAttributesAnimator.swift */,
+				50C44BA3C981C06394DD18C403C60FF3 /* CubeAttributesAnimator.swift */,
+				0CCD81069097BE7CFB0B0B7DA084B5FF /* LayoutAttributesAnimator.swift */,
+				C3468D92BB4B7CBA28102F6C1058366A /* LinearCardAttributesAnimator.swift */,
+				325A2291840B01E26FF24E946D65325E /* PageAttributesAnimator.swift */,
+				3805E0E17AB00B7E8741FCF40E50B68A /* ParallaxAttributesAnimator.swift */,
+				F188571772EB9A225824444D60174BEC /* RotateInOutAttributesAnimator.swift */,
+				39E63DB18FA0089F8F98EE31E7997B70 /* SnapInAttributesAnimator.swift */,
+				968972DB7B8CD3612EEB1101D60038DE /* UIView+Anchor.swift */,
+				5E58E979B9C27837227D7249E6F15A37 /* ZoomInOutAttributesAnimator.swift */,
+				DF5EB051A0EFE1A7151F8733F8097AFC /* Support Files */,
+			);
+			name = AnimatedCollectionViewLayout;
+			path = AnimatedCollectionViewLayout;
+			sourceTree = "<group>";
+		};
+		DF5EB051A0EFE1A7151F8733F8097AFC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				77098BEEB7FBB2AD7F510DCD943B0345 /* AnimatedCollectionViewLayout.modulemap */,
+				A5744C5A8EE4624A63F7C50EB956CC6B /* AnimatedCollectionViewLayout.xcconfig */,
+				C533FF59042FC4B8FC1D930B7C5B432C /* AnimatedCollectionViewLayout-dummy.m */,
+				2B818D57E883B38A81AF0A91EB5534DD /* AnimatedCollectionViewLayout-prefix.pch */,
+				D8ED11294B1A8D040F66455F1A088505 /* AnimatedCollectionViewLayout-umbrella.h */,
+				08B8C0C73D20393ED70AF43E847311BB /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AnimatedCollectionViewLayout";
+			sourceTree = "<group>";
+		};
+		E42EF1D2A24A3CFAEE5346161CDCC290 /* Pods-BeepcalTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A18E50D17755EFAD0CFFD18BD6429F0 /* Info.plist */,
+				BB3534016674E3ED5D82BD505FE99666 /* Pods-BeepcalTests.modulemap */,
+				1B3374BF4C4814C22B28C821FA22FFE8 /* Pods-BeepcalTests-acknowledgements.markdown */,
+				D70289A31874D104A8C48F4FA103FB94 /* Pods-BeepcalTests-acknowledgements.plist */,
+				4D2F41783BDE0E4F7CDDB904C963BBDE /* Pods-BeepcalTests-dummy.m */,
+				10182E55252C17CFA1B37ED200A6A7BC /* Pods-BeepcalTests-frameworks.sh */,
+				FF31B64C250E8A324D78CBE81786501D /* Pods-BeepcalTests-resources.sh */,
+				F1DE92EF4BF9DD78755CE688696DB4F0 /* Pods-BeepcalTests-umbrella.h */,
+				55FAE41F90ECEA730C25312B17C2292B /* Pods-BeepcalTests.debug.xcconfig */,
+				975D300ED9BBD2D9DF524E2A77A669A5 /* Pods-BeepcalTests.release.xcconfig */,
+			);
+			name = "Pods-BeepcalTests";
+			path = "Target Support Files/Pods-BeepcalTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		39F900B2D17A081915B8EFBEE53D6F63 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38037376537115491C941B30F19C2AEA /* Pods-BeepcalUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93F513B2FBBE8B9E1DC13105679B47EC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C6D49CB5C7495246F553976229C3EDC /* Pods-Beepcal-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD22FD7D889DDD75136E3A022E855F7C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4312948C1CDF0C35BC92E6118602537 /* AnimatedCollectionViewLayout-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA92BAB155A21799DD0461476404E84D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F63A2A8BD2936344B22912BF83AEF96D /* Pods-BeepcalTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		01B5F9358EAD17782FA546BF99060034 /* AnimatedCollectionViewLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6C88F719B2AF55EEFFD88A2BE8F10DD /* Build configuration list for PBXNativeTarget "AnimatedCollectionViewLayout" */;
+			buildPhases = (
+				809FA6DE3ED35BB7B97126DA58072C76 /* Sources */,
+				7B286E7A43102940D94EC219C3FBC877 /* Frameworks */,
+				CD22FD7D889DDD75136E3A022E855F7C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnimatedCollectionViewLayout;
+			productName = AnimatedCollectionViewLayout;
+			productReference = 2FCA0EEA9F9F845DA75B505CFC1807E8 /* AnimatedCollectionViewLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		32AB5A55A6CBD3A6D6C39A013BC7A335 /* Pods-BeepcalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD7A80D2C0BD72A3ECA77989DBE9D922 /* Build configuration list for PBXNativeTarget "Pods-BeepcalUITests" */;
+			buildPhases = (
+				2A31215B31262E996FADA84EC24B299F /* Sources */,
+				E3FF658EB7B16BC8E055573891DCB4D1 /* Frameworks */,
+				39F900B2D17A081915B8EFBEE53D6F63 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-BeepcalUITests";
+			productName = "Pods-BeepcalUITests";
+			productReference = 20FEE8732660592EAEB919E3B00E93B5 /* Pods_BeepcalUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4E0CB816008F5B6BFE6605F1AB149472 /* Pods-Beepcal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FF5ACAAA38773B0F943F6904EC6F7D9 /* Build configuration list for PBXNativeTarget "Pods-Beepcal" */;
+			buildPhases = (
+				74526F317DFB6A5BA63BE1E603619520 /* Sources */,
+				8EC3B49BD0A230D6621E64FB59E8226F /* Frameworks */,
+				93F513B2FBBE8B9E1DC13105679B47EC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B70BF9BB3AD7FE987C0444B47904C8D /* PBXTargetDependency */,
+			);
+			name = "Pods-Beepcal";
+			productName = "Pods-Beepcal";
+			productReference = C98116CD81398BB19D8EC37218BF357D /* Pods_Beepcal.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F24941ED5D943242DDFAD8CE9B077EA6 /* Pods-BeepcalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39AAC810A26830C523A297C139EDFBEB /* Build configuration list for PBXNativeTarget "Pods-BeepcalTests" */;
+			buildPhases = (
+				77F12C1F619CE336C5EAD2391B77A032 /* Sources */,
+				E9EF88FEDAEDB3C5DEB6567416BE4530 /* Frameworks */,
+				EA92BAB155A21799DD0461476404E84D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-BeepcalTests";
+			productName = "Pods-BeepcalTests";
+			productReference = 116AB85E910747C592ED6C46F599A257 /* Pods_BeepcalTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 85634F22200B1E32C382BFB917A695F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01B5F9358EAD17782FA546BF99060034 /* AnimatedCollectionViewLayout */,
+				4E0CB816008F5B6BFE6605F1AB149472 /* Pods-Beepcal */,
+				F24941ED5D943242DDFAD8CE9B077EA6 /* Pods-BeepcalTests */,
+				32AB5A55A6CBD3A6D6C39A013BC7A335 /* Pods-BeepcalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A31215B31262E996FADA84EC24B299F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F986559F52D634C22ADA7EA00DEDC5F /* Pods-BeepcalUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74526F317DFB6A5BA63BE1E603619520 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F4453712B4C69ECE9DE47D6E7CF347D /* Pods-Beepcal-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77F12C1F619CE336C5EAD2391B77A032 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9BD8319EAE92EB70B24E520D6C1E2CB /* Pods-BeepcalTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		809FA6DE3ED35BB7B97126DA58072C76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3448F958C584DB2F0007F60C1D7C8F0E /* AnimatedCollectionViewLayout-dummy.m in Sources */,
+				61C552D3D8E8535D17FE67E7A1241E2F /* AnimatedCollectionViewLayout.swift in Sources */,
+				1DB658B6052ECB623162518123B77756 /* CrossFadeAttributesAnimator.swift in Sources */,
+				6C3E0ED549F157B68511CEA0FCFFBE2C /* CubeAttributesAnimator.swift in Sources */,
+				675FC8085F139617288ECDF622AFBDB7 /* LayoutAttributesAnimator.swift in Sources */,
+				25C0613E2A219CCBC754E32839090857 /* LinearCardAttributesAnimator.swift in Sources */,
+				A54630491BB0108B124C967C2A100F08 /* PageAttributesAnimator.swift in Sources */,
+				1802C70744FC5ACF32217ACBF5260972 /* ParallaxAttributesAnimator.swift in Sources */,
+				1125A5CE7857DA14A4C8E6D742C4596F /* RotateInOutAttributesAnimator.swift in Sources */,
+				0FDDDEBF4DB465F3EE253A58B15419DF /* SnapInAttributesAnimator.swift in Sources */,
+				520A9C5F907E09600B65840BD97D7CC7 /* UIView+Anchor.swift in Sources */,
+				7F40B8BBCC675E39488BCC8C4B49268A /* ZoomInOutAttributesAnimator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B70BF9BB3AD7FE987C0444B47904C8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AnimatedCollectionViewLayout;
+			target = 01B5F9358EAD17782FA546BF99060034 /* AnimatedCollectionViewLayout */;
+			targetProxy = 0D20BEC8CE6BB9D1D810EA5F7A1738D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		114CE7154C14D28B746B6E193D07E61D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5744C5A8EE4624A63F7C50EB956CC6B /* AnimatedCollectionViewLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AnimatedCollectionViewLayout/AnimatedCollectionViewLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AnimatedCollectionViewLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AnimatedCollectionViewLayout/AnimatedCollectionViewLayout.modulemap";
+				PRODUCT_NAME = AnimatedCollectionViewLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		366BF1645744BB3A88D40ED6C7AF7534 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55FAE41F90ECEA730C25312B17C2292B /* Pods-BeepcalTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BeepcalTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BeepcalTests/Pods-BeepcalTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BeepcalTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		39C5BC78A31CDE101068C530CAC7FA0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		41782A1425E2BD93403EC6EB23C52951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9419B3E08E0900E6962FF99B5902FA7D /* Pods-BeepcalUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BeepcalUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BeepcalUITests/Pods-BeepcalUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BeepcalUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		906379D74D769599C772F8FECDAAD8BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53F0C679BC849B688386D731F3AF6AB3 /* Pods-Beepcal.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Beepcal/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Beepcal/Pods-Beepcal.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Beepcal;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		98F54995CB3E42BE5A1717A24749E609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AABA2B928F487D9D0F87A021D60E9F5 /* Pods-BeepcalUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BeepcalUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BeepcalUITests/Pods-BeepcalUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BeepcalUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9D3CBCBB7510EF81CAA826E830D1829D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5744C5A8EE4624A63F7C50EB956CC6B /* AnimatedCollectionViewLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AnimatedCollectionViewLayout/AnimatedCollectionViewLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AnimatedCollectionViewLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AnimatedCollectionViewLayout/AnimatedCollectionViewLayout.modulemap";
+				PRODUCT_NAME = AnimatedCollectionViewLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AF8A8B35E1B19A1888156374E51D2991 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 975D300ED9BBD2D9DF524E2A77A669A5 /* Pods-BeepcalTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BeepcalTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BeepcalTests/Pods-BeepcalTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BeepcalTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E66D4C5DE2E66688339F44D4FF620684 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F3F204EA314FD4B3EEFF4B98144D3D3 /* Pods-Beepcal.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Beepcal/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Beepcal/Pods-Beepcal.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Beepcal;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C5BC78A31CDE101068C530CAC7FA0F /* Debug */,
+				89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39AAC810A26830C523A297C139EDFBEB /* Build configuration list for PBXNativeTarget "Pods-BeepcalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				366BF1645744BB3A88D40ED6C7AF7534 /* Debug */,
+				AF8A8B35E1B19A1888156374E51D2991 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FF5ACAAA38773B0F943F6904EC6F7D9 /* Build configuration list for PBXNativeTarget "Pods-Beepcal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				906379D74D769599C772F8FECDAAD8BB /* Debug */,
+				E66D4C5DE2E66688339F44D4FF620684 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD7A80D2C0BD72A3ECA77989DBE9D922 /* Build configuration list for PBXNativeTarget "Pods-BeepcalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41782A1425E2BD93403EC6EB23C52951 /* Debug */,
+				98F54995CB3E42BE5A1717A24749E609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6C88F719B2AF55EEFFD88A2BE8F10DD /* Build configuration list for PBXNativeTarget "AnimatedCollectionViewLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				114CE7154C14D28B746B6E193D07E61D /* Debug */,
+				9D3CBCBB7510EF81CAA826E830D1829D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

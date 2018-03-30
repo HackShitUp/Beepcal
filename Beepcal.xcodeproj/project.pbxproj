@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4EA249E5E26B74BF184F5BF9 /* Pods_Beepcal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD270B7A4F685F1B99094680 /* Pods_Beepcal.framework */; };
+		7E6101FC206EDDC700CC6AB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6101FB206EDDC700CC6AB3 /* AppDelegate.swift */; };
+		7E6101FE206EDDC700CC6AB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6101FD206EDDC700CC6AB3 /* ViewController.swift */; };
+		7E610201206EDDC700CC6AB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6101FF206EDDC700CC6AB3 /* Main.storyboard */; };
+		7E610204206EDDC700CC6AB3 /* Beepcal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E610202206EDDC700CC6AB3 /* Beepcal.xcdatamodeld */; };
+		7E610206206EDDC700CC6AB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E610205206EDDC700CC6AB3 /* Assets.xcassets */; };
+		7E610209206EDDC700CC6AB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E610207206EDDC700CC6AB3 /* LaunchScreen.storyboard */; };
+		7E610214206EDDC700CC6AB3 /* BeepcalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E610213206EDDC700CC6AB3 /* BeepcalTests.swift */; };
+		7E61021F206EDDC700CC6AB3 /* BeepcalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E61021E206EDDC700CC6AB3 /* BeepcalUITests.swift */; };
+		84265182EDA58FBA4F950E44 /* Pods_BeepcalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8346277D541E8C064227E50 /* Pods_BeepcalUITests.framework */; };
+		C975BD27BFC413DFD8B3C222 /* Pods_BeepcalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56CE7E78A86D53D6A3B7F9F /* Pods_BeepcalTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E610210206EDDC700CC6AB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E6101F0206EDDC700CC6AB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E6101F7206EDDC700CC6AB3;
+			remoteInfo = Beepcal;
+		};
+		7E61021B206EDDC700CC6AB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E6101F0206EDDC700CC6AB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E6101F7206EDDC700CC6AB3;
+			remoteInfo = Beepcal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7E6101F8206EDDC700CC6AB3 /* Beepcal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beepcal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E6101FB206EDDC700CC6AB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7E6101FD206EDDC700CC6AB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7E610200206EDDC700CC6AB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7E610203206EDDC700CC6AB3 /* Beepcal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Beepcal.xcdatamodel; sourceTree = "<group>"; };
+		7E610205206EDDC700CC6AB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E610208206EDDC700CC6AB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7E61020A206EDDC700CC6AB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E61020F206EDDC700CC6AB3 /* BeepcalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeepcalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E610213206EDDC700CC6AB3 /* BeepcalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeepcalTests.swift; sourceTree = "<group>"; };
+		7E610215206EDDC700CC6AB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E61021A206EDDC700CC6AB3 /* BeepcalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeepcalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E61021E206EDDC700CC6AB3 /* BeepcalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeepcalUITests.swift; sourceTree = "<group>"; };
+		7E610220206EDDC700CC6AB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82CBA52A7D86038884B5CE4A /* Pods-BeepcalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeepcalUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeepcalUITests/Pods-BeepcalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		87A8C1E22304E09F25DEE5A3 /* Pods-Beepcal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beepcal.release.xcconfig"; path = "Pods/Target Support Files/Pods-Beepcal/Pods-Beepcal.release.xcconfig"; sourceTree = "<group>"; };
+		9753137AE0EB19CDF608EC70 /* Pods-BeepcalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeepcalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeepcalTests/Pods-BeepcalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A56CE7E78A86D53D6A3B7F9F /* Pods_BeepcalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeepcalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA00376EBFF1D8CDB7854894 /* Pods-Beepcal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beepcal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Beepcal/Pods-Beepcal.debug.xcconfig"; sourceTree = "<group>"; };
+		BD270B7A4F685F1B99094680 /* Pods_Beepcal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beepcal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8346277D541E8C064227E50 /* Pods_BeepcalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeepcalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA2299CE4D5F1BC4D65AEE9C /* Pods-BeepcalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeepcalUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeepcalUITests/Pods-BeepcalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DA7C82ECBA9FE7C413C81B4A /* Pods-BeepcalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeepcalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeepcalTests/Pods-BeepcalTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E6101F5206EDDC700CC6AB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EA249E5E26B74BF184F5BF9 /* Pods_Beepcal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E61020C206EDDC700CC6AB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C975BD27BFC413DFD8B3C222 /* Pods_BeepcalTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E610217206EDDC700CC6AB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84265182EDA58FBA4F950E44 /* Pods_BeepcalUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A5A6FA14A5B15327C8E11A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA00376EBFF1D8CDB7854894 /* Pods-Beepcal.debug.xcconfig */,
+				87A8C1E22304E09F25DEE5A3 /* Pods-Beepcal.release.xcconfig */,
+				9753137AE0EB19CDF608EC70 /* Pods-BeepcalTests.debug.xcconfig */,
+				DA7C82ECBA9FE7C413C81B4A /* Pods-BeepcalTests.release.xcconfig */,
+				DA2299CE4D5F1BC4D65AEE9C /* Pods-BeepcalUITests.debug.xcconfig */,
+				82CBA52A7D86038884B5CE4A /* Pods-BeepcalUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7E6101EF206EDDC700CC6AB3 = {
+			isa = PBXGroup;
+			children = (
+				7E6101FA206EDDC700CC6AB3 /* Beepcal */,
+				7E610212206EDDC700CC6AB3 /* BeepcalTests */,
+				7E61021D206EDDC700CC6AB3 /* BeepcalUITests */,
+				7E6101F9206EDDC700CC6AB3 /* Products */,
+				6A5A6FA14A5B15327C8E11A0 /* Pods */,
+				90E3A8AC777C85A28F66BA24 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7E6101F9206EDDC700CC6AB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E6101F8206EDDC700CC6AB3 /* Beepcal.app */,
+				7E61020F206EDDC700CC6AB3 /* BeepcalTests.xctest */,
+				7E61021A206EDDC700CC6AB3 /* BeepcalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E6101FA206EDDC700CC6AB3 /* Beepcal */ = {
+			isa = PBXGroup;
+			children = (
+				7E6101FB206EDDC700CC6AB3 /* AppDelegate.swift */,
+				7E6101FD206EDDC700CC6AB3 /* ViewController.swift */,
+				7E6101FF206EDDC700CC6AB3 /* Main.storyboard */,
+				7E610205206EDDC700CC6AB3 /* Assets.xcassets */,
+				7E610207206EDDC700CC6AB3 /* LaunchScreen.storyboard */,
+				7E61020A206EDDC700CC6AB3 /* Info.plist */,
+				7E610202206EDDC700CC6AB3 /* Beepcal.xcdatamodeld */,
+			);
+			path = Beepcal;
+			sourceTree = "<group>";
+		};
+		7E610212206EDDC700CC6AB3 /* BeepcalTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E610213206EDDC700CC6AB3 /* BeepcalTests.swift */,
+				7E610215206EDDC700CC6AB3 /* Info.plist */,
+			);
+			path = BeepcalTests;
+			sourceTree = "<group>";
+		};
+		7E61021D206EDDC700CC6AB3 /* BeepcalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7E61021E206EDDC700CC6AB3 /* BeepcalUITests.swift */,
+				7E610220206EDDC700CC6AB3 /* Info.plist */,
+			);
+			path = BeepcalUITests;
+			sourceTree = "<group>";
+		};
+		90E3A8AC777C85A28F66BA24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD270B7A4F685F1B99094680 /* Pods_Beepcal.framework */,
+				A56CE7E78A86D53D6A3B7F9F /* Pods_BeepcalTests.framework */,
+				D8346277D541E8C064227E50 /* Pods_BeepcalUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E6101F7206EDDC700CC6AB3 /* Beepcal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E610223206EDDC700CC6AB3 /* Build configuration list for PBXNativeTarget "Beepcal" */;
+			buildPhases = (
+				27BD7F55B9055D98993B5AA7 /* [CP] Check Pods Manifest.lock */,
+				7E6101F4206EDDC700CC6AB3 /* Sources */,
+				7E6101F5206EDDC700CC6AB3 /* Frameworks */,
+				7E6101F6206EDDC700CC6AB3 /* Resources */,
+				EB447F22EDB770B7E0D799FC /* [CP] Embed Pods Frameworks */,
+				3091E0DC9DC7E97CEEB78D3F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Beepcal;
+			productName = Beepcal;
+			productReference = 7E6101F8206EDDC700CC6AB3 /* Beepcal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7E61020E206EDDC700CC6AB3 /* BeepcalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E610226206EDDC700CC6AB3 /* Build configuration list for PBXNativeTarget "BeepcalTests" */;
+			buildPhases = (
+				C3215DCD51F6C41D1B7E9D75 /* [CP] Check Pods Manifest.lock */,
+				7E61020B206EDDC700CC6AB3 /* Sources */,
+				7E61020C206EDDC700CC6AB3 /* Frameworks */,
+				7E61020D206EDDC700CC6AB3 /* Resources */,
+				5E260C25C70D39C47542F5B4 /* [CP] Embed Pods Frameworks */,
+				7A46D10FA9EEECE68A56DC76 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E610211206EDDC700CC6AB3 /* PBXTargetDependency */,
+			);
+			name = BeepcalTests;
+			productName = BeepcalTests;
+			productReference = 7E61020F206EDDC700CC6AB3 /* BeepcalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7E610219206EDDC700CC6AB3 /* BeepcalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E610229206EDDC700CC6AB3 /* Build configuration list for PBXNativeTarget "BeepcalUITests" */;
+			buildPhases = (
+				98D5DF435C23113C4066A582 /* [CP] Check Pods Manifest.lock */,
+				7E610216206EDDC700CC6AB3 /* Sources */,
+				7E610217206EDDC700CC6AB3 /* Frameworks */,
+				7E610218206EDDC700CC6AB3 /* Resources */,
+				8428C2723A38666399FAC038 /* [CP] Embed Pods Frameworks */,
+				423AE3E0A538B38B2811A80A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E61021C206EDDC700CC6AB3 /* PBXTargetDependency */,
+			);
+			name = BeepcalUITests;
+			productName = BeepcalUITests;
+			productReference = 7E61021A206EDDC700CC6AB3 /* BeepcalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E6101F0206EDDC700CC6AB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Capsule LLC";
+				TargetAttributes = {
+					7E6101F7206EDDC700CC6AB3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					7E61020E206EDDC700CC6AB3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7E6101F7206EDDC700CC6AB3;
+					};
+					7E610219206EDDC700CC6AB3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7E6101F7206EDDC700CC6AB3;
+					};
+				};
+			};
+			buildConfigurationList = 7E6101F3206EDDC700CC6AB3 /* Build configuration list for PBXProject "Beepcal" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E6101EF206EDDC700CC6AB3;
+			productRefGroup = 7E6101F9206EDDC700CC6AB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E6101F7206EDDC700CC6AB3 /* Beepcal */,
+				7E61020E206EDDC700CC6AB3 /* BeepcalTests */,
+				7E610219206EDDC700CC6AB3 /* BeepcalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E6101F6206EDDC700CC6AB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E610209206EDDC700CC6AB3 /* LaunchScreen.storyboard in Resources */,
+				7E610206206EDDC700CC6AB3 /* Assets.xcassets in Resources */,
+				7E610201206EDDC700CC6AB3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E61020D206EDDC700CC6AB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E610218206EDDC700CC6AB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27BD7F55B9055D98993B5AA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Beepcal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3091E0DC9DC7E97CEEB78D3F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Beepcal/Pods-Beepcal-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		423AE3E0A538B38B2811A80A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeepcalUITests/Pods-BeepcalUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E260C25C70D39C47542F5B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeepcalTests/Pods-BeepcalTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A46D10FA9EEECE68A56DC76 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeepcalTests/Pods-BeepcalTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8428C2723A38666399FAC038 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeepcalUITests/Pods-BeepcalUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98D5DF435C23113C4066A582 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeepcalUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3215DCD51F6C41D1B7E9D75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeepcalTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB447F22EDB770B7E0D799FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Beepcal/Pods-Beepcal-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AnimatedCollectionViewLayout/AnimatedCollectionViewLayout.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AnimatedCollectionViewLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Beepcal/Pods-Beepcal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E6101F4206EDDC700CC6AB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E610204206EDDC700CC6AB3 /* Beepcal.xcdatamodeld in Sources */,
+				7E6101FE206EDDC700CC6AB3 /* ViewController.swift in Sources */,
+				7E6101FC206EDDC700CC6AB3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E61020B206EDDC700CC6AB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E610214206EDDC700CC6AB3 /* BeepcalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E610216206EDDC700CC6AB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E61021F206EDDC700CC6AB3 /* BeepcalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E610211206EDDC700CC6AB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E6101F7206EDDC700CC6AB3 /* Beepcal */;
+			targetProxy = 7E610210206EDDC700CC6AB3 /* PBXContainerItemProxy */;
+		};
+		7E61021C206EDDC700CC6AB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E6101F7206EDDC700CC6AB3 /* Beepcal */;
+			targetProxy = 7E61021B206EDDC700CC6AB3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7E6101FF206EDDC700CC6AB3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E610200206EDDC700CC6AB3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7E610207206EDDC700CC6AB3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E610208206EDDC700CC6AB3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E610221206EDDC700CC6AB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7E610222206EDDC700CC6AB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E610224206EDDC700CC6AB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA00376EBFF1D8CDB7854894 /* Pods-Beepcal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4AFFM98UVG;
+				INFOPLIST_FILE = Beepcal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = li.capsule.capsule.Beepcal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E610225206EDDC700CC6AB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87A8C1E22304E09F25DEE5A3 /* Pods-Beepcal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4AFFM98UVG;
+				INFOPLIST_FILE = Beepcal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = li.capsule.capsule.Beepcal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7E610227206EDDC700CC6AB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9753137AE0EB19CDF608EC70 /* Pods-BeepcalTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4AFFM98UVG;
+				INFOPLIST_FILE = BeepcalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = li.capsule.capsule.BeepcalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Beepcal.app/Beepcal";
+			};
+			name = Debug;
+		};
+		7E610228206EDDC700CC6AB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA7C82ECBA9FE7C413C81B4A /* Pods-BeepcalTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4AFFM98UVG;
+				INFOPLIST_FILE = BeepcalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = li.capsule.capsule.BeepcalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Beepcal.app/Beepcal";
+			};
+			name = Release;
+		};
+		7E61022A206EDDC700CC6AB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA2299CE4D5F1BC4D65AEE9C /* Pods-BeepcalUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4AFFM98UVG;
+				INFOPLIST_FILE = BeepcalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = li.capsule.capsule.BeepcalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Beepcal;
+			};
+			name = Debug;
+		};
+		7E61022B206EDDC700CC6AB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82CBA52A7D86038884B5CE4A /* Pods-BeepcalUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4AFFM98UVG;
+				INFOPLIST_FILE = BeepcalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = li.capsule.capsule.BeepcalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Beepcal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E6101F3206EDDC700CC6AB3 /* Build configuration list for PBXProject "Beepcal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E610221206EDDC700CC6AB3 /* Debug */,
+				7E610222206EDDC700CC6AB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E610223206EDDC700CC6AB3 /* Build configuration list for PBXNativeTarget "Beepcal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E610224206EDDC700CC6AB3 /* Debug */,
+				7E610225206EDDC700CC6AB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E610226206EDDC700CC6AB3 /* Build configuration list for PBXNativeTarget "BeepcalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E610227206EDDC700CC6AB3 /* Debug */,
+				7E610228206EDDC700CC6AB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E610229206EDDC700CC6AB3 /* Build configuration list for PBXNativeTarget "BeepcalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E61022A206EDDC700CC6AB3 /* Debug */,
+				7E61022B206EDDC700CC6AB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7E610202206EDDC700CC6AB3 /* Beepcal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7E610203206EDDC700CC6AB3 /* Beepcal.xcdatamodel */,
+			);
+			currentVersion = 7E610203206EDDC700CC6AB3 /* Beepcal.xcdatamodel */;
+			path = Beepcal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7E6101F0206EDDC700CC6AB3 /* Project object */;
+}
