@@ -22,7 +22,8 @@ class CalendarCell: JTAppleCell {
     @IBOutlet weak var containerView: UIView!
     
     /**
-     Update the cell's content with the CellState object. This method determines if the date is (1) part of this month, (2) a date of TODAY
+     Update the cell's content with the CellState object. This method determines if the date is (1) part of this month, (2) a date of TODAY.
+     - Parameter cellState: A CellState object.
      */
     func setCell(cellState: CellState) {
         // Date belongs to this month.
