@@ -1,7 +1,7 @@
 #  Beepcal
 
 ## Beep (coding challenge)
-#### Beepcal = iOS calendar app that shows what dates you posted something on Instagram.
+#### Beepcal = iOS calendar app that shows what dates you posted something on Instagram. CHECK HOW OFTEN YOU DO IT FOR THE GRAM!
 #### Main UI classes: InitialViewController.swift, CalendarController.swift, CalendarCell.swift.
 
 ## What Works?

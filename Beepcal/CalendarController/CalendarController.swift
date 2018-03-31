@@ -35,8 +35,6 @@ class CalendarController: UIViewController {
     func getAllPostsForCurrentUser() {
         InstagramManager.shared.getAllMedia { (error: Error?, objects: [InstagramMedia]?) in
             if error == nil {
-                print("fired!!!")
-                
                 // Clear array
                 self.allPosts.removeAll(keepingCapacity: false)
                 // Append the
@@ -44,8 +42,6 @@ class CalendarController: UIViewController {
                     for post in objects! {
                         self.allPosts.append(post)
                     }
-                    
-//                    print("All posts: \(self.allPosts)\n\n\n")
                     
                     // Map the array of allPosts to their createdDates (Date).
                     let postedDates = self.allPosts.map({$0.createdDate})
@@ -135,6 +131,7 @@ class CalendarController: UIViewController {
         let monthName = DateFormatter().monthSymbols[(month-1) % 12]
         monthTitle.text = monthName + " " + String(Calendar.current.component(.year, from: startDate))
     }
+    
 }
 
 
@@ -148,7 +145,7 @@ extension CalendarController: JTAppleCalendarViewDataSource, JTAppleCalendarView
         formatter.timeZone = Calendar.current.timeZone
         formatter.locale = Calendar.current.locale
         // Set up the start and end dates for the calendar
-        let startDate = formatter.date(from: "2018 01 01")
+        let startDate = formatter.date(from: "2015 01 01")
         let endDate = formatter.date(from: "2019 01 01")
         
         // Return the calendar's attributes w the configured data sets
@@ -167,30 +164,22 @@ extension CalendarController: JTAppleCalendarViewDataSource, JTAppleCalendarView
         // *** CalendarCell
         let calendarCell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: "CalendarCell", for: indexPath) as! CalendarCell
         
-        // Indicate with color value changes that a new month started
-        if cellState.dateBelongsTo == .thisMonth {
-            calendarCell.title.textColor = UIColor.black
-            calendarCell.title.transform = CGAffineTransform.identity
-            if Date() == cellState.date {
-                calendarCell.title.textColor = UIColor.infared()
-                calendarCell.title.transform = CGAffineTransform(scaleX: 1.50, y: 1.50)
+        // 1) Date configuration
+        calendarCell.setCell(cellState: cellState)
+        
+        // 2) Set instagram post if user shared a date.
+        /// Mapped array of InstagramMedia objects to Date objects.
+        let postDates = self.allPosts.map({$0.createdDate})
+        /// Get the next Date object of the current visible cell's date.
+        if let nextDate = Calendar.current.date(byAdding: .day, value: 1, to: cellState.date) {
+            // Loop through the post's dates
+            for i in 0..<postDates.count {
+                if postDates[i].isBetween(dateOne: cellState.date, dateTwo: nextDate) == true {
+                    // Update the cell
+                    calendarCell.updateView(post: allPosts[i])
+                }
             }
-        } else {
-            calendarCell.title.textColor = UIColor.lightGray
-            calendarCell.title.transform = CGAffineTransform.identity
         }
-        // Set the date of the cell
-        calendarCell.title.text = cellState.text
-        
-        
-        // Update thge CalendarCell class with the first post the user shared on that date.
-        /// Filtered array of InstagramMedia objects based on whether the posts's dates match that of this cell's date.
-        let postsForThisDate = self.allPosts.map({$0.createdDate})
-        // Determine if any of the posts were posted in this cell's date.
-        if postsForThisDate.contains(cellState.date) {
-            calendarCell.title.text = "!"
-        }
-        
 
         // Return the calendarCell
         return calendarCell

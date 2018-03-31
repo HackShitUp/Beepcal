@@ -22,28 +22,26 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="irX-aI-Kj3">
                         <rect key="frame" x="3" y="3" width="119" height="119"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GLG-TB-2Cc">
+                                <rect key="frame" x="0.0" y="0.0" width="119" height="119"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzq-OK-Sft">
                                 <rect key="frame" x="0.0" y="0.0" width="119" height="119"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GLG-TB-2Cc">
-                                <rect key="frame" x="69" y="69" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Nuw-2V-9M7"/>
-                                    <constraint firstAttribute="width" constant="50" id="TnV-lc-Bbb"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="vzq-OK-Sft" secondAttribute="trailing" id="3NP-vQ-APK"/>
-                            <constraint firstAttribute="bottom" secondItem="GLG-TB-2Cc" secondAttribute="bottom" id="DHF-0d-eGW"/>
-                            <constraint firstAttribute="trailing" secondItem="GLG-TB-2Cc" secondAttribute="trailing" id="Dez-vF-iR7"/>
+                            <constraint firstItem="GLG-TB-2Cc" firstAttribute="top" secondItem="irX-aI-Kj3" secondAttribute="top" id="IV7-0o-mmT"/>
                             <constraint firstItem="vzq-OK-Sft" firstAttribute="top" secondItem="irX-aI-Kj3" secondAttribute="top" id="e5P-gS-XIW"/>
                             <constraint firstAttribute="bottom" secondItem="vzq-OK-Sft" secondAttribute="bottom" id="gZc-r3-TUQ"/>
                             <constraint firstItem="vzq-OK-Sft" firstAttribute="leading" secondItem="irX-aI-Kj3" secondAttribute="leading" id="jGj-dX-vpV"/>
+                            <constraint firstAttribute="bottom" secondItem="GLG-TB-2Cc" secondAttribute="bottom" id="mdw-E5-Ekr"/>
+                            <constraint firstAttribute="trailing" secondItem="GLG-TB-2Cc" secondAttribute="trailing" id="mh7-CX-Jl9"/>
+                            <constraint firstItem="GLG-TB-2Cc" firstAttribute="leading" secondItem="irX-aI-Kj3" secondAttribute="leading" id="r3c-aq-ZPL"/>
                         </constraints>
                     </view>
                 </subviews>
