@@ -1,12 +1,34 @@
 PODS:
   - AnimatedCollectionViewLayout (0.3.0)
+  - JTAppleCalendar (7.1.5)
+  - MarqueeLabel/Swift (3.1.4)
+  - NotificationBannerSwift (1.6.2):
+    - MarqueeLabel/Swift
+    - SnapKit (~> 4.0)
+  - SDWebImage (4.3.3):
+    - SDWebImage/Core (= 4.3.3)
+  - SDWebImage/Core (4.3.3)
+  - SnapKit (4.0.0)
+  - SwiftInstagram (1.1.0):
+    - SwiftInstagram/Core (= 1.1.0)
+  - SwiftInstagram/Core (1.1.0)
 
 DEPENDENCIES:
   - AnimatedCollectionViewLayout
+  - JTAppleCalendar
+  - NotificationBannerSwift
+  - SDWebImage
+  - SwiftInstagram
 
 SPEC CHECKSUMS:
   AnimatedCollectionViewLayout: 504b992a4258eb39d2dd2b2b48e84b4b95860fd7
+  JTAppleCalendar: 2d4f974f9f3c8b4964d51ca1f6e004883c031fbe
+  MarqueeLabel: bf768455fe88d427f71476ebb23f9092b660f40b
+  NotificationBannerSwift: 4eceb2add9d5eaa0596c63d49690b4d6476e74ec
+  SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftInstagram: 90d5c143d8ebe1c790e06a138b8da3c8f2a9ba16
 
-PODFILE CHECKSUM: ec553c24c04ab1a1fbb02cebe3d3758651c92b60
+PODFILE CHECKSUM: 2076d3e514d9decae6515c74afcbf102e70d63cc
 
 COCOAPODS: 1.4.0
