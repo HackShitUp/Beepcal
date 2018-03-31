@@ -112,6 +112,9 @@ class CalendarController: UIViewController {
         self.collectionView.visibleDates {[unowned self] (visibleDates: DateSegmentInfo) in
             self.setupViewsOfCalendar(from: visibleDates)
         }
+        
+        // Scroll to current date
+        self.collectionView.scrollToDate(Date())
     }
 
     override func didReceiveMemoryWarning() {
@@ -167,20 +170,27 @@ extension CalendarController: JTAppleCalendarViewDataSource, JTAppleCalendarView
         // Indicate with color value changes that a new month started
         if cellState.dateBelongsTo == .thisMonth {
             calendarCell.title.textColor = UIColor.black
+            calendarCell.title.transform = CGAffineTransform.identity
+            if Date() == cellState.date {
+                calendarCell.title.textColor = UIColor.infared()
+                calendarCell.title.transform = CGAffineTransform(scaleX: 1.50, y: 1.50)
+            }
         } else {
             calendarCell.title.textColor = UIColor.lightGray
+            calendarCell.title.transform = CGAffineTransform.identity
         }
         // Set the date of the cell
         calendarCell.title.text = cellState.text
         
+        
         // Update thge CalendarCell class with the first post the user shared on that date.
         /// Filtered array of InstagramMedia objects based on whether the posts's dates match that of this cell's date.
-        let postsForThisDate = self.allPosts.filter({$0.createdDate == cellState.date})
-        print("Posts for this date \(cellState.date)\n: \(postsForThisDate)\n\n\n")
-        /// If the filtered array isn't empty, update the cell with the first post shared on that day.
-        if postsForThisDate.isEmpty == false {
-            calendarCell.updateView(post: postsForThisDate.first!)
+        let postsForThisDate = self.allPosts.map({$0.createdDate})
+        // Determine if any of the posts were posted in this cell's date.
+        if postsForThisDate.contains(cellState.date) {
+            calendarCell.title.text = "!"
         }
+        
 
         // Return the calendarCell
         return calendarCell
