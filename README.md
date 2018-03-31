@@ -29,3 +29,10 @@
 * SDWebImage
 * NotificationBannerSwift
 
+
+## How To Install
+### (1) Clone or download the project.
+### (2) Change to directory.
+### (3) Run pod install if project hasn't binded its dependencies yet.
+### (4) Run on workspace!
+
