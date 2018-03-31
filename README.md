@@ -29,7 +29,6 @@
 * SDWebImage
 * NotificationBannerSwift
 
-
 ## How To Install
 ### (1) Clone or download the project.
 ### (2) Change to directory.
