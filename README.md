@@ -2,13 +2,17 @@
 
 ### Beep (coding challenge) + Calendar = Beepcal
 
-### Beepcal is your Instagram client on steroids. View all your posts in a beautiful, simple to use calendar format.
-
+### Beepcal = iOS calendar app that shows what dates you posted something on Instagram.
+### Main UI classes: InitialViewController.swift, CalendarController.swift, CalendarCell.swift.
 
 ### Build Settings
 * iOS version 10.0 and greater.
 
 ### APIs Used
+
 * AnimatedCollectionViewLayout
 * JTAppleCalendar
 * SwiftInstagram
+* SDWebImage
+* NotificationBannerSwift
+

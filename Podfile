@@ -9,6 +9,8 @@ target 'Beepcal' do
 	pod 'AnimatedCollectionViewLayout'
 	pod 'JTAppleCalendar'
 	pod 'SwiftInstagram'
+	pod 'NotificationBannerSwift'
+	pod 'SDWebImage'
 
   target 'BeepcalTests' do
     inherit! :search_paths

@@ -24,9 +24,10 @@
 		7E61023B206EE1EC00CC6AB3 /* InstagramManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E61023A206EE1EC00CC6AB3 /* InstagramManager.swift */; };
 		7E61023D206EE21E00CC6AB3 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E61023C206EE21E00CC6AB3 /* UIView+Extensions.swift */; };
 		7E610240206EE4FA00CC6AB3 /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E61023F206EE4FA00CC6AB3 /* CalendarController.swift */; };
-		7E610242206EE5AF00CC6AB3 /* CalendarStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E610241206EE5AF00CC6AB3 /* CalendarStory.swift */; };
 		7E610248206EED3900CC6AB3 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E610246206EED3900CC6AB3 /* CalendarCell.swift */; };
 		7E610249206EED3900CC6AB3 /* CalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E610247206EED3900CC6AB3 /* CalendarCell.xib */; };
+		7E6E4B49206EF8C300B38DB4 /* IGPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6E4B48206EF8C300B38DB4 /* IGPost.swift */; };
+		7E6E4B4B206EF9D200B38DB4 /* BCUIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6E4B4A206EF9D200B38DB4 /* BCUIManager.swift */; };
 		84265182EDA58FBA4F950E44 /* Pods_BeepcalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8346277D541E8C064227E50 /* Pods_BeepcalUITests.framework */; };
 		C975BD27BFC413DFD8B3C222 /* Pods_BeepcalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56CE7E78A86D53D6A3B7F9F /* Pods_BeepcalTests.framework */; };
 /* End PBXBuildFile section */
@@ -71,10 +72,11 @@
 		7E61023A206EE1EC00CC6AB3 /* InstagramManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramManager.swift; sourceTree = "<group>"; };
 		7E61023C206EE21E00CC6AB3 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		7E61023F206EE4FA00CC6AB3 /* CalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
-		7E610241206EE5AF00CC6AB3 /* CalendarStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarStory.swift; sourceTree = "<group>"; };
 		7E610245206EEB6600CC6AB3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7E610246206EED3900CC6AB3 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		7E610247206EED3900CC6AB3 /* CalendarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarCell.xib; sourceTree = "<group>"; };
+		7E6E4B48206EF8C300B38DB4 /* IGPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGPost.swift; sourceTree = "<group>"; };
+		7E6E4B4A206EF9D200B38DB4 /* BCUIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCUIManager.swift; sourceTree = "<group>"; };
 		82CBA52A7D86038884B5CE4A /* Pods-BeepcalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeepcalUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeepcalUITests/Pods-BeepcalUITests.release.xcconfig"; sourceTree = "<group>"; };
 		87A8C1E22304E09F25DEE5A3 /* Pods-Beepcal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beepcal.release.xcconfig"; path = "Pods/Target Support Files/Pods-Beepcal/Pods-Beepcal.release.xcconfig"; sourceTree = "<group>"; };
 		9753137AE0EB19CDF608EC70 /* Pods-BeepcalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeepcalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeepcalTests/Pods-BeepcalTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -209,7 +211,8 @@
 		7E61023E206EE25400CC6AB3 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
-				7E61023A206EE1EC00CC6AB3 /* InstagramManager.swift */,
+				7E6E4B4C206EFA7E00B38DB4 /* Instagram */,
+				7E6E4B4D206EFA8800B38DB4 /* CustomUIStuff */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -218,7 +221,6 @@
 			isa = PBXGroup;
 			children = (
 				7E61023F206EE4FA00CC6AB3 /* CalendarController.swift */,
-				7E610241206EE5AF00CC6AB3 /* CalendarStory.swift */,
 				7E61024B206EEFAC00CC6AB3 /* CalendarCell */,
 			);
 			path = CalendarController;
@@ -231,6 +233,23 @@
 				7E610247206EED3900CC6AB3 /* CalendarCell.xib */,
 			);
 			path = CalendarCell;
+			sourceTree = "<group>";
+		};
+		7E6E4B4C206EFA7E00B38DB4 /* Instagram */ = {
+			isa = PBXGroup;
+			children = (
+				7E61023A206EE1EC00CC6AB3 /* InstagramManager.swift */,
+				7E6E4B48206EF8C300B38DB4 /* IGPost.swift */,
+			);
+			path = Instagram;
+			sourceTree = "<group>";
+		};
+		7E6E4B4D206EFA8800B38DB4 /* CustomUIStuff */ = {
+			isa = PBXGroup;
+			children = (
+				7E6E4B4A206EF9D200B38DB4 /* BCUIManager.swift */,
+			);
+			path = CustomUIStuff;
 			sourceTree = "<group>";
 		};
 		90E3A8AC777C85A28F66BA24 /* Frameworks */ = {
@@ -521,12 +540,20 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Beepcal/Pods-Beepcal-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AnimatedCollectionViewLayout/AnimatedCollectionViewLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftInstagram/SwiftInstagram.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AnimatedCollectionViewLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NotificationBannerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftInstagram.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -550,10 +577,11 @@
 				7E6101FC206EDDC700CC6AB3 /* AppDelegate.swift in Sources */,
 				7E610240206EE4FA00CC6AB3 /* CalendarController.swift in Sources */,
 				7E61022D206EDF4600CC6AB3 /* UIColor+Extensions.swift in Sources */,
-				7E610242206EE5AF00CC6AB3 /* CalendarStory.swift in Sources */,
 				7E61022F206EDFB000CC6AB3 /* InitialViewController.swift in Sources */,
+				7E6E4B4B206EF9D200B38DB4 /* BCUIManager.swift in Sources */,
 				7E610248206EED3900CC6AB3 /* CalendarCell.swift in Sources */,
 				7E610239206EE14800CC6AB3 /* CALayer+Extensions.swift in Sources */,
+				7E6E4B49206EF8C300B38DB4 /* IGPost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,25 +23,40 @@ class InitialViewController: UIViewController {
             Instagram.shared.login(from: navigator, success: {
                 // Ensure that the user is authenticated before displaying their posts in the calendar.
                 if Instagram.shared.isAuthenticated == true {
+                    // MARK: - BCUIManager
+                    BCUIManager.shared.showStatusBarBanner(title: "Authenticated!", color: UIColor.babyBlue())
+                    
                     // CalendarController
                     let calendarControllerVC = self.storyboard?.instantiateViewController(withIdentifier: "calendarControllerVC") as! CalendarController
                     self.navigationController?.pushViewController(calendarControllerVC, animated: true)
                 }
             }, failure: { (error: Error?) in
                 print("\(self): \(error?.localizedDescription as Any)")
+                // MARK: - BCUIManager
+                BCUIManager.shared.showStatusBarBanner(title: "Couldn't Log In...", color: UIColor.infared())
             })
         }
     }
+    
     
     
     // MARK: - View Controller Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Hide the navigationBar
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        // MARK: - BCNavigationBar
+        _ = BCNavigationBar(viewController: self, title: "Beepcal", color: UIColor.babyBlue(), font: UIFont(name: "AvenirNext-Bold", size: 21)!, isTranslucent: false, delegate: nil, leftItems: nil, rightItems: nil)
         
-        print("User is authenticated: \(Instagram.shared.isAuthenticated)")
+        
+        // MARK: - SwiftInstagram
+        // Show the calendar if the user is already authenticated
+        if Instagram.shared.isAuthenticated == true {
+            // MARK: - BCUIManager
+            BCUIManager.shared.showStatusBarBanner(title: "Already Authenticated!", color: UIColor.babyBlue())
+            // CalendarController
+            let calendarControllerVC = self.storyboard?.instantiateViewController(withIdentifier: "calendarControllerVC") as! CalendarController
+            self.navigationController?.pushViewController(calendarControllerVC, animated: true)
+        }
         
         // Design the loginButton
         loginButton.backgroundColor = UIColor.babyBlue()

@@ -40,5 +40,19 @@ extension UIView {
         self.clipsToBounds = true
     }
 
+    /// Function: Draws a circular mask around a UIView object
+    /// - Parameter forView: The UIView object to draw a circular mask around its layer for.
+    /// - Parameter borderWidth: The width of the outer border of the UIView's layer.
+    /// - Parameter color: The UIColor of the border.
+    func makeCircular(borderWidth: CGFloat?, borderColor: UIColor?) {
+        self.layoutIfNeeded()
+        self.layoutSubviews()
+        self.setNeedsLayout()
+        self.layer.cornerRadius = self.frame.size.width/2
+        self.layer.borderColor = borderColor!.cgColor
+        self.layer.borderWidth = borderWidth!
+        self.layer.masksToBounds = true
+        self.clipsToBounds = true
+    }
 
 }
